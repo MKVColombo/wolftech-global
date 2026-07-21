@@ -2,7 +2,7 @@ FROM eclipse-temurin:21-jre
 
 WORKDIR /app
 
-COPY WolfTechGlobal.jar app.jar
+COPY distribution/WolfTechGlobal.jar app.jar
 
 EXPOSE 10000
 
