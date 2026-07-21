@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#07101f">
+  <title>Careers — WolfTech Global</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;600;800&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/site.css(v=44)}">
+  <script>try{if(localStorage.getItem('wolfTheme')==='light')document.documentElement.dataset.theme='light'}catch(e){}</script>
+</head>
+<body class="subpage career-page">
+<header class="nav"><a class="brand" href="/"><b>W</b><span>WolfTech<small>GLOBAL SYSTEMS</small></span></a><nav id="navLinks"><a href="/">Home</a><a href="/development">Development</a><a href="/voip">VoIP</a><a href="/arts">Arts</a><a href="/marketing">Marketing</a><a href="/careers">Careers</a></nav><button class="menu" id="menu" aria-label="Toggle menu"><i></i><i></i></button><button class="theme" type="button" aria-label="Switch color theme">◔</button><a class="connect" href="/contact">Connect</a></header>
+<main>
+  <section class="career-hero"><canvas id="matrixCanvas"></canvas><div><h1>JOIN THE <em>PROTOCOL</em></h1><p>WE ARE RECRUITING HIGH-BANDWIDTH INDIVIDUALS<br>TO ENGINEER THE FUTURE OF GLOBAL DIGITAL<br>ECOSYSTEMS.</p><a class="career-scroll" href="#open-positions">VIEW OPEN POSITION <span>↓</span></a></div></section>
+  <section class="job-wrap" id="open-positions">
+    <div class="career-section-head"><span class="index">OPEN POSITION // 01</span><h2>ACTIVE <em>RECRUITMENT</em></h2></div>
+    <article class="job-card">
+      <div class="job-icon"><svg aria-hidden="true"><use href="/images/wolf-icons-v2.svg#career"></use></svg></div>
+      <div class="job-main">
+        <div class="job-title"><h2>BUSINESS PROMOTION AGENT</h2><span>ACTIVE RECRUITMENT</span></div>
+        <div class="job-meta"><span>▣ GROWTH &amp; MARKETING</span><span>◷ FULL-TIME</span><span>⌖ COLOMBO HQ / GLOBAL</span></div>
+        <p>We are seeking an energetic, goal-oriented team player to drive our business promotion initiatives. You will be responsible for scaling our market presence through strategic outreach and negotiation.</p>
+        <h3>TECHNICAL SPECS</h3><ul><li>Proven sales experience</li><li>Excellent communication and negotiation skills</li><li>A growth mindset</li><li>Energetic, goal-oriented, and a team player</li></ul>
+        <button class="btn btn--solid apply-trigger" type="button" data-position="Business Promotion Agent">APPLY NOW <b>→</b></button><small>CONTACT: 0772722250</small>
+      </div>
+    </article>
+  </section>
+  <section class="radar-invite"><span class="index">TALENT DATABASE // OPEN</span><h2>STAY ON <em>RADAR</em></h2><p>Don't see a position that fits? Transmit your CV for future protocol activations.</p><button class="btn apply-trigger" type="button" data-position="General Application">GENERAL TRANSMISSION →</button></section>
+</main>
+
+<dialog class="career-dialog" id="applicationDialog" aria-labelledby="applicationTitle">
+  <button class="dialog__close" type="button" aria-label="Close application form">×</button>
+  <div class="application-head"><span class="index">SECURE TALENT CHANNEL // ONLINE</span><h2 id="applicationTitle">TRANSMIT APPLICATION</h2><p id="applicationPosition">Business Promotion Agent</p></div>
+  <form id="applicationForm" enctype="multipart/form-data">
+    <input type="hidden" name="position" id="positionInput">
+    <div class="form-grid"><label>FULL NAME *<input name="name" autocomplete="name" maxlength="80" required placeholder="Your full name"></label><label>EMAIL ADDRESS *<input type="email" name="email" autocomplete="email" maxlength="160" required placeholder="you@example.com"></label><label>PHONE NUMBER<input name="phone" autocomplete="tel" maxlength="40" placeholder="+94 77 000 0000"></label><label>LOCATION<input name="location" maxlength="80" placeholder="City / Country"></label></div>
+    <label>WHY WOLFTECH?<textarea name="message" maxlength="2000" rows="5" placeholder="Tell us briefly about your experience and why this role fits you."></textarea></label>
+    <label class="file-field">CV / RÉSUMÉ *<input type="file" name="resume" required accept=".pdf,.doc,.docx"><span><b>CHOOSE FILE</b><small>PDF, DOC, or DOCX · MAX 5 MB</small></span></label>
+    <label class="consent"><input type="checkbox" required><span>I confirm the information is accurate and consent to WolfTech processing it for recruitment.</span></label>
+    <button class="btn btn--solid form-submit" type="submit">TRANSMIT APPLICATION <b>→</b></button><p class="application-status" role="status" aria-live="polite"></p>
+  </form>
+</dialog>
+
+<footer><a class="brand" href="/"><b>W</b><span>WolfTech<small>GLOBAL SYSTEMS</small></span></a><div><span>SERVICES</span><a href="/development">Development</a><a href="/voip">VoIP Solutions</a><a href="/arts">Creative Arts</a><a href="/marketing">Marketing</a></div><div><span>COMPANY</span><a href="/about">About Us</a><a href="/careers">Careers</a><a href="/legal">Legal</a><a href="/support">Support</a></div><div class="copyright">© <span th:text="${year}">2026</span> WOLFTECH GLOBAL<br>STATUS: SYSTEMS ONLINE</div></footer>
+<script th:src="@{/js/theme.js(v=44)}"></script><script th:src="@{/js/matrix.js(v=44)}"></script><script th:src="@{/js/careers.js(v=44)}"></script><script th:src="@{/js/footer.js(v=44)}"></script><script th:src="@{/js/splash-cursor.js(v=44)}"></script><script th:src="@{/js/depth-scroll.js(v=44)}"></script>
+</body></html>

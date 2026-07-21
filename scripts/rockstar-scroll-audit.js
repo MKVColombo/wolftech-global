@@ -1,0 +1,2 @@
+const { chromium } = require('C:/tmp/pw-audit/node_modules/playwright');
+(async()=>{const browser=await chromium.launch({headless:true});const page=await browser.newPage({viewport:{width:1440,height:900}});await page.goto('https://www.rockstargames.com/VI',{waitUntil:'domcontentloaded',timeout:90000});await page.waitForTimeout(6000);for(const [i,y] of [0,450,900,1400,2100].entries()){await page.evaluate(p=>scrollTo({top:p,behavior:'instant'}),y);await page.waitForTimeout(900);await page.screenshot({path:`C:/tmp/wolftech-audit/rockstar-${i}.png`})}await browser.close()})();
