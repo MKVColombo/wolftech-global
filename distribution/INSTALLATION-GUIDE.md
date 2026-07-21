@@ -2,6 +2,8 @@
 
 `WolfTechGlobal.jar` is a self-contained executable Spring Boot application. It includes the Java backend, HTML pages, CSS, JavaScript, animations, images, icons, fonts configuration, forms, and favicon.
 
+This package contains the v49 experience build: responsive dark/light themes, cinematic case studies, service-specific visual systems, page and section transitions, the interactive System Explorer, enhanced forms with local draft recovery, optional interface sound, and accessibility-aware reduced-motion support.
+
 ## Requirements
 
 - Java 8 or newer. Java 17 or 21 LTS is recommended for a new server.
